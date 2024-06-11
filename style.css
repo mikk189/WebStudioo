@@ -229,7 +229,7 @@ li {
   bottom: 0;
   display: block;
   width: 100%;
-  padding-left:107px;
+  padding-left: 107px;
   padding-top: 26px;
   padding-bottom: 26px;
   background-color: rgba(47, 48, 58, .8);
@@ -429,6 +429,79 @@ li {
   height: 250px;
 }
 
+.footer-container {
+  margin-right: 100px;
+}
+
+.join-us {
+  margin-right: 40px;
+}
+
+.join-link {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .1);
+  padding-left: 10px;
+}
+
+.join-list {
+  display: flex;
+  margin-top: 15px;
+  gap: 15px;
+}
+
+.join-text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-subscribe-text {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-input-label {}
+
+.footer-subscribe-input {
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  /* 187.5% */
+  letter-spacing: 0.96px;
+
+}
+
 /* =================================ПОРТФОЛИО==================================== */
 .header-portfolio {}
 
@@ -508,4 +581,147 @@ li {
   line-height: 1.875;
   /* 187.5%  1.875*/
   letter-spacing: 0.48px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+  transform: translate(-50%, -50%);
+}
+
+.form-wrapper {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  margin-bottom: 15px;
+
+}
+
+.form-wrapper:hover {
+  border: 1px solid #2196f3;
+}
+
+.form-field {
+  width: 448px;
+  height: 40px;
+  margin-left: 15px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form-wrapper1 {
+  position: relative;
+  height: 100px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.20);
+  margin-bottom: 15px;
+}
+
+.form-wrapper1:hover {
+  border: 1px solid #2196f3;
+
+}
+
+.form-button {
+  margin-left: 120px;
+  width: 200px;
+  height: 50px;
+  color: #FFF;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  /* 187.5% */
+  letter-spacing: 0.96px;
+}
+
+.form-button:hover {
+  color: #2196f3;
+  background-color: #ececec;
+}
+
+.form-field1 {
+  width: 448px;
+  margin-left: 15px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+}
+
+.form-svg {
+  position: absolute;
+  bottom: 10px;
+}
+
+.form-field:hover {
+  border: 1px solid #2196f3);
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+.button-modal {
+  border: none;
+  position: absolute;
+  bottom: 95%;
+  left: 94%;
+}
+
+.modal-close {
+  fill: black;
+}
+
+.modal-label {
+  margin-left: 25px;
+  margin-top: 40px;
+  width: 448px;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+
+.footer1 {
+  display: flex;
+}
+
+.modal-close:hover {
+  fill: #2196f3;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
