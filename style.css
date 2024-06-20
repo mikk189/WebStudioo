@@ -78,6 +78,8 @@ li {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .nav-link:hover::after {
@@ -87,14 +89,22 @@ li {
   content: "";
   display: block;
   height: 4px;
-  background: #2196f3;
+  background-color: #2196f3;
   border: none;
+  margin-top: 15px;
   border-radius: 2px;
-
+  transition-property: background-color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scaleX(1.2);
 }
 
 .nav-link:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-list {}
@@ -109,10 +119,16 @@ li {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .decision {
@@ -157,6 +173,17 @@ li {
   padding-left: 34px;
   padding-right: 34px;
   margin: 0 auto;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.decision-button:hover {
+  background-color: white;
+  color: #2196F3;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .details {
@@ -362,6 +389,9 @@ li {
   /* 171.429% */
   letter-spacing: 0.42px;
   margin-bottom: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-number {
@@ -372,14 +402,23 @@ li {
   /* 171.429% */
   letter-spacing: 0.42px;
   margin-top: 9px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link-number:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover {
   color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials {
@@ -390,11 +429,17 @@ li {
 
 .instagram {
   fill: #AFB1B8;
-
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instagram:hover {
   fill: white;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .socials-link {
@@ -404,10 +449,16 @@ li {
   border-radius: 50%;
   height: 40px;
   width: 40px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover {
   background-color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-items {}
@@ -557,11 +608,11 @@ li {
   position: relative;
   width: 100%;
   overflow: hidden;
-  
+
 }
 
 .portfolio-items-overlay-text {
-  position:absolute;
+  position: absolute;
   bottom: -1px;
   padding: 63px 24px;
   margin: 0;
@@ -580,7 +631,10 @@ li {
 .portfolio-button:hover {
   border: none;
   color: #fff;
-  background: #2196f3;
+  background: #2196f3; 
+   transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -646,6 +700,9 @@ li {
 
 .form-wrapper:hover {
   border: 1px solid #2196f3;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field {
@@ -667,7 +724,9 @@ li {
 
 .form-wrapper1:hover {
   border: 1px solid #2196f3;
-
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button {
@@ -691,6 +750,9 @@ li {
 .form-button:hover {
   color: #2196f3;
   background-color: #ececec;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field1 {
@@ -707,7 +769,10 @@ li {
 }
 
 .form-field:hover {
-  border: 1px solid #2196f3);
+  border: 1px solid #2196f3;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-group {
@@ -724,6 +789,8 @@ li {
 .modal-close {
   fill: black;
 }
+
+
 
 .modal-label {
   margin-left: 25px;
@@ -745,6 +812,9 @@ li {
 
 .modal-close:hover {
   fill: #2196f3;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
